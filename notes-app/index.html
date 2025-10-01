@@ -1,13 +1,20 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/index.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+<html lang="en"> <!-- ✅ Added lang -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title> <!-- ✅ Added title -->
+
+    <!-- Vite will inject bundled CSS automatically,
+         you don’t need to link to /src/index.css directly.
+         If you’re using Tailwind, just import it in main.jsx or index.css -->
+  </head>
+  <body>
+    <div id="root"></div> <!-- ✅ React mounts here -->
+
+    <!-- Vite entry point -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
+
+
