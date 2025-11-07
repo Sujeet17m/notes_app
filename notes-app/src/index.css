@@ -3,3 +3,12 @@
 body{
     background-color: #f9f9f9;
 }
+
+/* Line clamp utility for text truncation */
+.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
